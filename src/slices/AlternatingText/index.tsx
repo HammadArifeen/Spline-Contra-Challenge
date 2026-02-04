@@ -1,11 +1,31 @@
 "use client";
 
 import { Bounded } from "@/components/Bounded";
-import { asText, Content } from "@prismicio/client";
-import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
+import { Content } from "@prismicio/client";
+import { SliceComponentProps } from "@prismicio/react";
 import { View } from "@react-three/drei";
 import Scene from "./Scene";
 import clsx from "clsx";
+
+// Hardcoded workflow content explaining how the website was built with Spline
+const workflowSections = [
+  {
+    heading: "Starting with Spline Hana",
+    body: "We began our journey by exploring Spline Hana's powerful 3D capabilities. The intuitive interface made it easy to create stunning visuals that would have taken hours in traditional 3D software. Spline's real-time collaboration features allowed for rapid iteration and creative exploration.",
+  },
+  {
+    heading: "Designing the Can Models",
+    body: "The soda can models were crafted directly in Spline with realistic materials and lighting. We experimented with various textures, reflections, and colors to create the perfect fizzy aesthetic. The ability to preview changes in real-time was a game-changer for our workflow.",
+  },
+  {
+    heading: "Adding Smooth Interactions",
+    body: "Spline's event system enabled us to create smooth scroll-based animations and hover effects. We connected the 3D scenes to user interactions, making the experience feel alive and responsive. GSAP and React Three Fiber helped bring everything together seamlessly.",
+  },
+  {
+    heading: "Final Polish & Export",
+    body: "The finishing touches included fine-tuning animations, optimizing performance, and ensuring the 3D experience worked flawlessly across all devices. Spline's export options made it simple to integrate our creations into this Next.js application.",
+  },
+];
 
 /**
  * Props for `AlternatingText`.
@@ -31,9 +51,9 @@ const AlternatingText = ({ slice }: AlternatingTextProps): JSX.Element => {
             <Scene />
           </View>
 
-          {slice.primary.text_group.map((item, index) => (
+          {workflowSections.map((item, index) => (
             <div
-              key={asText(item.heading)}
+              key={item.heading}
               className="alternating-section grid h-screen place-items-center gap-x-12 md:grid-cols-2"
             >
               <div
@@ -43,11 +63,11 @@ const AlternatingText = ({ slice }: AlternatingTextProps): JSX.Element => {
                 )}
               >
                 <div className="text-balance text-6xl font-bold">
-                  <PrismicRichText field={item.heading} />
+                  <h3>{item.heading}</h3>
                 </div>
 
                 <div className="mt-4 text-xl">
-                  <PrismicRichText field={item.body} />
+                  <p>{item.body}</p>
                 </div>
               </div>
             </div>
@@ -59,3 +79,4 @@ const AlternatingText = ({ slice }: AlternatingTextProps): JSX.Element => {
 };
 
 export default AlternatingText;
+
