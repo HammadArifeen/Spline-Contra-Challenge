@@ -4,9 +4,9 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    // If deploying to a subdirectory like username.github.io/repo-name, 
-    // set basePath:
+    // For GitHub Pages subdirectory deployment
     basePath: '/Spline-Contra-Challenge',
+    assetPrefix: '/Spline-Contra-Challenge/',
 };
 
 export default nextConfig;
