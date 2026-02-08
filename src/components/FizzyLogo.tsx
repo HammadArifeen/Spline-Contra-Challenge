@@ -13,7 +13,7 @@ export function FizzyLogo(props: SVGProps<SVGSVGElement>) {
       className={clsx("group", props.className)}
       aria-labelledby="fizzy-logo-title"
     >
-      <title id="fizzy-logo-title">fIZZY</title>
+      <title id="fizzy-logo-title">Fizzi</title>
       <g clipPath="url(#clip0_342_66)">
         <mask
           id="mask0_342_66"

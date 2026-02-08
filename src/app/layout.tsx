@@ -16,9 +16,9 @@ const alpino = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "fIZZY | Contra x Spline Challenge",
-  description: "An interactive 3D landing page showcasing Spline Hana. Created for the Contra x Spline Challenge.",
-  keywords: ["Spline", "Hana", "3D", "Web Design", "Contra", "Challenge", "fIZZY"],
+  title: "Fizzi | Live life on the edge",
+  description: "An interactive 3D landing page for Fizzi soda. Built with Next.js, React Three Fiber, and GSAP.",
+  keywords: ["3D", "Web Design", "Next.js", "React Three Fiber", "GSAP", "Fizzi"],
 };
 
 export default function RootLayout({

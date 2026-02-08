@@ -15,10 +15,7 @@ export default function Footer({ }: Props) {
         </div>
         <div className="mt-8 text-center">
           <p className="text-lg font-semibold text-sky-950">
-            Project made to showcase <span className="text-orange-600">Spline Hana</span>
-          </p>
-          <p className="mt-2 text-sm text-sky-800">
-            Created for the <span className="font-bold">Contra x Spline Challenge</span>
+            Soda for the bold. Fizzi.
           </p>
         </div>
       </div>

@@ -123,23 +123,23 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           <div className="grid auto-rows-min place-items-center text-center">
             <h1 className="hero-header text-7xl font-black uppercase leading-[.8] text-orange-500 md:text-[9rem] lg:text-[13rem]">
               <TextSplitter
-                text="fIZZY Soda"
+                text="Fizzi Soda"
                 wordDisplayStyle="block"
                 className="hero-header-word"
               />
             </h1>
 
             <div className="hero-subheading mt-12 text-5xl font-semibold text-sky-950 lg:text-6xl">
-              <p>Refreshingly Creative</p>
+              <p>Live life on the edge</p>
             </div>
 
             <div className="hero-body text-2xl font-normal text-sky-950">
-              <p>A showcase of Spline Hana&apos;s 3D capabilities</p>
+              <p>3 Flavors. Endless Fizz. Your new satisfying addiction.</p>
             </div>
 
             <InternalButton
-              href="/challenge"
-              buttonText="Learn More"
+              href="/"
+              buttonText="Shop Now"
               className="hero-button mt-12"
             />
           </div>
@@ -147,13 +147,13 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
         <div className="text-side relative z-[80] grid h-screen items-center gap-4 md:grid-cols-2">
           <div>
             <h2 className="text-side-heading text-balance text-6xl font-black uppercase text-sky-950 lg:text-8xl">
-              <TextSplitter text="Built with Spline" />
+              <TextSplitter text="Try All Flavors" />
             </h2>
             <div className="text-side-body mt-4 max-w-xl text-balance text-xl font-normal text-slate-950">
               <p>
-                This interactive 3D experience was created using Spline Hana,
-                showcasing the power of modern web-based 3D design tools for
-                the Contra x Spline Challenge.
+                Our three delicious flavors are crafted to perfection.
+                From zesty lemon-lime to sweet strawberry to tangy grape,
+                there&apos;s a Fizzi for everyone.
               </p>
             </div>
           </div>

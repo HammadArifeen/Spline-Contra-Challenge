@@ -7,23 +7,23 @@ import { View } from "@react-three/drei";
 import Scene from "./Scene";
 import clsx from "clsx";
 
-// Hardcoded workflow content explaining how the website was built with Spline
+// Hardcoded content showcasing the soda flavors
 const workflowSections = [
   {
-    heading: "Starting with Spline Hana",
-    body: "We began our journey by exploring Spline Hana's powerful 3D capabilities. The intuitive interface made it easy to create stunning visuals that would have taken hours in traditional 3D software. Spline's real-time collaboration features allowed for rapid iteration and creative exploration.",
+    heading: "Lemon Lime Bliss",
+    body: "A zesty, refreshing blend of tangy lemon and lime that will awaken your senses. Perfect for hot summer days or whenever you need a citrus-powered pick-me-up. The bubbles dance on your tongue with every sip.",
   },
   {
-    heading: "Designing the Can Models",
-    body: "The soda can models were crafted directly in Spline with realistic materials and lighting. We experimented with various textures, reflections, and colors to create the perfect fizzy aesthetic. The ability to preview changes in real-time was a game-changer for our workflow.",
+    heading: "Strawberry Sensation",
+    body: "Sweet, luscious strawberry flavor bursting with fruity goodness. Our strawberry Fizzi captures the essence of sun-ripened berries in every satisfying gulp. It's like summer in a can.",
   },
   {
-    heading: "Adding Smooth Interactions",
-    body: "Spline's event system enabled us to create smooth scroll-based animations and hover effects. We connected the 3D scenes to user interactions, making the experience feel alive and responsive. GSAP and React Three Fiber helped bring everything together seamlessly.",
+    heading: "Grape Escape",
+    body: "Bold, grape-forward flavor that takes you back to simpler times. Rich and full-bodied, our grape Fizzi delivers an unmistakable taste that's both nostalgic and refreshingly modern.",
   },
   {
-    heading: "Final Polish & Export",
-    body: "The finishing touches included fine-tuning animations, optimizing performance, and ensuring the 3D experience worked flawlessly across all devices. Spline's export options made it simple to integrate our creations into this Next.js application.",
+    heading: "Find Your Fizz",
+    body: "With three distinct flavors to choose from, there's a Fizzi for every mood and moment. Collect them all, share them with friends, or keep them all to yourself – we won't judge.",
   },
 ];
 
