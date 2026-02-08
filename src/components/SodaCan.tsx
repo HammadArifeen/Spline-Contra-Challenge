@@ -3,14 +3,16 @@
 import { useGLTF, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
-useGLTF.preload("/Soda-can.gltf");
+const basePath = "/Spline-Contra-Challenge";
+
+useGLTF.preload(`${basePath}/Soda-can.gltf`);
 
 const flavorTextures = {
-  lemonLime: "/labels/lemon-lime.png",
-  grape: "/labels/grape.png",
-  blackCherry: "/labels/cherry.png",
-  strawberryLemonade: "/labels/strawberry.png",
-  watermelon: "/labels/watermelon.png",
+  lemonLime: `${basePath}/labels/lemon-lime.png`,
+  grape: `${basePath}/labels/grape.png`,
+  blackCherry: `${basePath}/labels/cherry.png`,
+  strawberryLemonade: `${basePath}/labels/strawberry.png`,
+  watermelon: `${basePath}/labels/watermelon.png`,
 };
 
 const metalMaterial = new THREE.MeshStandardMaterial({
@@ -29,10 +31,10 @@ export function SodaCan({
   scale = 2,
   ...props
 }: SodaCanProps) {
-  const { nodes } = useGLTF("/Soda-can.gltf");
+  const { nodes } = useGLTF(`${basePath}/Soda-can.gltf`);
 
   const labels = useTexture(flavorTextures);
-  
+
   // Fixes upside down labels
   labels.strawberryLemonade.flipY = false;
   labels.blackCherry.flipY = false;
@@ -42,7 +44,7 @@ export function SodaCan({
 
   labels[flavor].minFilter = THREE.LinearFilter;
   labels[flavor].magFilter = THREE.LinearFilter;
-  
+
 
   const label = labels[flavor];
 

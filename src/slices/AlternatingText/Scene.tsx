@@ -14,7 +14,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 type Props = {};
 
-export default function Scene({}: Props) {
+export default function Scene({ }: Props) {
   const canRef = useRef<Group>(null);
 
   const bgColors = ["#FFA6B5", "#E9CFF6", "#CBEF9A"];
@@ -78,7 +78,7 @@ export default function Scene({}: Props) {
       rotation-y={isDesktop ? -0.3 : 0}
     >
       <FloatingCan flavor="strawberryLemonade" ref={canRef} />
-      <Environment files="/hdr/lobby.hdr" environmentIntensity={1.5} />
+      <Environment files="/Spline-Contra-Challenge/hdr/lobby.hdr" environmentIntensity={1.5} />
     </group>
   );
 }

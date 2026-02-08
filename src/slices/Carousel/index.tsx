@@ -20,16 +20,16 @@ const FLAVORS: {
   color: string;
   name: string;
 }[] = [
-  { flavor: "blackCherry", color: "#710523", name: "Black Cherry" },
-  { flavor: "grape", color: "#572981", name: "Grape Goodness" },
-  { flavor: "lemonLime", color: "#164405", name: "Lemon Lime" },
-  {
-    flavor: "strawberryLemonade",
-    color: "#690B3D",
-    name: "Strawberry Lemonade",
-  },
-  { flavor: "watermelon", color: "#4B7002", name: "Watermelon Crush" },
-];
+    { flavor: "blackCherry", color: "#710523", name: "Black Cherry" },
+    { flavor: "grape", color: "#572981", name: "Grape Goodness" },
+    { flavor: "lemonLime", color: "#164405", name: "Lemon Lime" },
+    {
+      flavor: "strawberryLemonade",
+      color: "#690B3D",
+      name: "Strawberry Lemonade",
+    },
+    { flavor: "watermelon", color: "#4B7002", name: "Watermelon Crush" },
+  ];
 
 /**
  * Props for `Carousel`.
@@ -130,7 +130,7 @@ const Carousel = ({ slice }: CarouselProps): JSX.Element => {
             />
           </Center>
           <Environment
-            files="/hdr/lobby.hdr"
+            files="/Spline-Contra-Challenge/hdr/lobby.hdr"
             environmentIntensity={0.6}
             environmentRotation={[0, 3, 0]}
           />

@@ -14,7 +14,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 type Props = {};
 
-export default function Scene({}: Props) {
+export default function Scene({ }: Props) {
 
   const isReady = useStore((state) => state.isReady);
 
@@ -69,10 +69,10 @@ export default function Scene({}: Props) {
 
     if (window.scrollY < 20) {
       introTl
-      .from(can1GroupRef.current.position, { y: -5, x: 1 }, 0)
-      .from(can1GroupRef.current.rotation, { z: 3 }, 0)
-      .from(can2GroupRef.current.position, { y: 5, x: 1 }, 0)
-      .from(can2GroupRef.current.rotation, { z: 3 }, 0);
+        .from(can1GroupRef.current.position, { y: -5, x: 1 }, 0)
+        .from(can1GroupRef.current.rotation, { z: 3 }, 0)
+        .from(can2GroupRef.current.position, { y: 5, x: 1 }, 0)
+        .from(can2GroupRef.current.rotation, { z: 3 }, 0);
     }
 
 
@@ -150,7 +150,7 @@ export default function Scene({}: Props) {
       />
       <FloatingCan ref={can5ref} flavor="watermelon" floatSpeed={FLOAT_SPEED} />
 
-      <Environment files="/hdr/lobby.hdr" environmentIntensity={1.5} />
+      <Environment files="/Spline-Contra-Challenge/hdr/lobby.hdr" environmentIntensity={1.5} />
     </group>
   );
 }
